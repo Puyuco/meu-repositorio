@@ -1,0 +1,104 @@
+seu trabalho manual:
+
+TEMPO ESTIMADO: 2 HORAS
+
+entrar no yahoo finance
+selecionar ação
+selecionar o período
+fazer download
+montar análises
+preparar e-mail
+enviar e-mail
+
+depois do python:
+
+TEMPO ESTIMADO:10 MINUTOS
+
+rodar o sistema
+escolher a ação
+
+
+instalando biblioteca / usando a biblioteca
+
+!pip install yfinance / import yfinance
+!pip install pyautogui / import pyautogui
+
+
+import yficance
+yfinance.Ticker('PETR4.SA').history('6mo') - 6 meses
+yfinance.Ticker('PETR4.SA').history('1y') - 1 ano
+
+dados = yfinance.Ticker('PETR4.SA').history('6mo')
+dados.Close
+fechamento = dados.Close
+
+
+ticker = input('Digite o Código da ação: ')
+dados = yfinance.Ticker(ticker).history('6mo')
+fechamento = dados.Close
+fechamento
+
+ticker = input('Digite o Código da ação: ')
+dados = yfinance.Ticker(ticker).history('6mo')
+fechamento = dados.Close
+fechamento.plot()
+
+Cotação máxima,mínima e atual:
+
+fechamento.max()
+fechamento.min()
+fechamento[-1]
+
+!pip install pyautogui
+!pip install pyperclip
+
+
+import pyautogui
+import pyperclip
+
+
+pyautogui.hotkey('ctrl','t')
+pyperclip.copy('www.gmail.com')
+pyautogui.hotkey('ctrl','v')
+pyautogui.hotkey('enter')
+pyautogui.click((x=107, y=193))
+
+import time
+
+time.sleep(5)
+
+
+pyautogui.position()
+
+
+pyautogui.PAUSE = 2
+
+pyautogui.hotkey('ctrl','t')
+pyperclip.copy('www.gmail.com')
+pyautogui.hotkey('ctrl','v')
+pyautogui.hotkey('enter')
+pyautogui.click(x=107, y=193)
+pyautogui.click(x=848, y=308)
+
+pyperclip.copy('gestor@gmail.com')
+pyautogui.hotkey('ctrl','v')
+pyautogui.hotkey('tab')
+
+pyperclip.copy('Análises Diárias')
+pyautogui.hotkey('ctrl','v')
+pyautogui.hotkey('tab')
+
+mensagem = f"""
+Prezado Gestor,
+
+Seguem as análises dos últimos seis meses da ação{ticker}:
+
+Cotação Máxima: R$ {maxima}
+Cotação Mínima: R$ {minima}
+Cotação Atual: R$ {atual}
+
+Qualquer Dúvida,estou a disposição!
+
+Atte."""
+pyperclip.copy(mensagem)
+pyautogui.hotkey('ctrl','v')
