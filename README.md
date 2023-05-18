@@ -1,0 +1,2 @@
+# meu-repositorio
+ Meu primeiro Repositório:  Olá pessoal,aqui eu estarei disponibilizando meu Primeiro Repositório,onde você encontrará meus Projetos e Certificados feito por apostilas e Datasets Reais relacionado a Ciência e Análise de Dados,com o intuito de demonstras minhas habilidades de Automatização,Machine Learning e Análise exploratórias de Dados.  Créditos ao meu aprendizado nos projetos:  * Python - Data Viking e Hashtag Programação * Power BI - Hashtag Treinamentos. 
